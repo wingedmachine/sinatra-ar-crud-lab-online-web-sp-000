@@ -1,4 +1,4 @@
-<form action="/posts/#{@post.id}" method="patch">
+<form action="/posts/<%= @post.id %>" method="patch">
   <label for="post[name]">Name: </label>
   <input type="text" name="post[name]" id="name" value="#{@post.name}"><br>
   <label for="post[content]">Content: </label><br>
