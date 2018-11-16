@@ -17,7 +17,7 @@ class ApplicationController < Sinatra::Base
   end
 
   post '/posts' do
-    wert = Post.new(params[:post])
+    wert = Post.create(params[:post])
     binding.pry
     erb :index
   end
