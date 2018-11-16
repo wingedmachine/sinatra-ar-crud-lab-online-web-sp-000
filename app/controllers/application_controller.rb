@@ -39,8 +39,7 @@ class ApplicationController < Sinatra::Base
     redirect get "posts/#{params[:id]}"
   end
 
-  get 'posts/:id/edit' do
-    binding.pry
+  get '/posts/:id/edit' do
     @post = Post.find(params[:id])
     erb :edit
   end
